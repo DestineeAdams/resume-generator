@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+        <title>resume genertor</title>
+    </head>
+
+    <body>
+        <h1>resume genertor</h1>
+
+        <form id="userForm">
+            <div>
+                <p>info</p>
+                
+                <input type="text" class="userInfo" placeholder="name" name="name" required />
+                <input type="email" class="userInfo" placeholder="email" name="email" />
+                <input type="tel" class="userInfo" placeholder="your phone number..." name="phoneNumber" />
+                <input type="text" class="userInfo" placeholder="website" name="website" />
+            </div>
+
+            <div>
+                <p>Summary</p>
+                <textarea name="Summary" id="Summary" rows="5" cols="20" placeholder="write about yourself in limit 500 Character" maxlength="500" required></textarea>
+            </div>
+
+            <div>
+                <p>work</p>
+
+                <input type="text" placeholder="role" name="role" required />
+                <input type="text" placeholder="company name" name="companyname" required />
+                <input type="date" placeholder="start date" name="startdate" required />
+                <input type="date" placeholder="start end" name="startend" />
+                <!-- <input type="checkbox" name="startend"> still work here?</input> -->
+                
+                <br>
+                <textarea name="jobSummary" id="Summary" rows="5" cols="20" placeholder="write about your role in limit 500 Character" maxlength="500" required></textarea>
+            </div>
+
+            <div>
+                <p>shcool</p>
+
+                <input type="text" placeholder="shcool name" name="shcoolName" />
+                <input type="text" placeholder="degree type" name="degreeType" />
+                <input type="date" placeholder="start date" name="startdate" />
+                <input type="date" placeholder="start end" name="startend" />
+            </div>
+
+            <div>
+                <p>skills</p>
+
+                <input type="text" placeholder="skill" name="skill" />
+            </div>
+            
+            <button id="btn">submit</button>
+        </form>
+
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
